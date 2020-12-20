@@ -25,6 +25,7 @@ def empty_query(query):
     try:
         r = types.InlineQueryResultArticle(
                 id='1',
+                parse_mode='Markdown',
                 title="Бот \"Математика\"",
                 description=hint,
                 # Текст сообщения, которое будет выводиться при нажатии на подсказку
@@ -106,4 +107,4 @@ def query_text(query):
 
 
 if __name__ == '__main__':
-    bot.infinity_polling()
+    bot.polling(none_stop=True)

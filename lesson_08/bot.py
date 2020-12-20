@@ -48,4 +48,4 @@ def query_text(query):
 
 
 if __name__ == '__main__':
-    bot.infinity_polling()
+    bot.polling(none_stop=True)
